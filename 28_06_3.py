@@ -10,4 +10,6 @@ def not_even(n):
     return n % 2 != 0 
 
 ls1 = [4, 5, 6, 1, 7, 8, 9, 10] 
-print(list(filtr(not_even, ls1)))
+
+for y in filtr(not_even, ls1):
+    print(y)
