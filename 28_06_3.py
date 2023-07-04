@@ -1,9 +1,7 @@
 def filtr(function, ls):
-    filtr_result = []
     for x in ls:
-        if function(x):
-            filtr_result.append(x)       
-    yield filtr_result
+        if function(x):      
+            yield x
 
 
 def not_even(n):
