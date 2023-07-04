@@ -1,18 +1,12 @@
-def map1(function, ls):
-    for i in ls:
-        print(function(i))
-
-def add_10(x):
-    if isinstance(x, (int, float)):
-        return x + 10
-    else: 
-        return ("You input is not int or float")
-
-ls1 = ['1', 5, 10]
-map1(add_10, ls1)
-
-
-'''You input is not int or float
-   15
-   20                             '''
-
+def counter():
+    x = kacnhi_qanak = 0
+    def inner():
+        nonlocal  x
+        x += 1
+        return x
+    return inner
+my_counter = counter()
+print(my_counter())  #1
+print(my_counter())  #2   
+print(my_counter())  #3
+print(my_counter())  #4
