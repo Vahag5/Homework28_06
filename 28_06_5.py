@@ -1,6 +1,6 @@
 def map1(function, ls):
     for i in ls:
-        yield i
+        yield function(i)
 
 def add_10(x):
     if isinstance(x, (int, float)):
