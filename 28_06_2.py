@@ -2,8 +2,8 @@ def zip1(*iterables):
     iterators = list(map(iter, iterables))
     while True:
         try:
-            i = list(map(next, iterators))
-            yield tuple(i)
+            x = list(map(next, iterators))
+            yield tuple(x)
         except StopIteration:
             return
 
