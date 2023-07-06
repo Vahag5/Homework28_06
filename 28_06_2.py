@@ -9,5 +9,5 @@ def zip1(*iterables):
 
 tver = [1, 2, 3]
 tar = ['a', 'b', 'c']
-for i in zip(tar, tver):
+for i in zip1(tar, tver):
     print(i)
